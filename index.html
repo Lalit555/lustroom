@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="juicyads-site-verification" content="60e807048e8185fc13f1e762201558c9">
 
-<title>Lustroom - Free Android Streaming App</title>
+<title>LustRoom - Free Android Streaming App</title>
 
-<meta name="description" content="Lustroom is a modern Android streaming app with trending videos, fast HD playback and smooth mobile experience.">
+<meta name="description" content="LustRoom is a modern Android streaming app with trending videos, fast HD playback and smooth mobile experience.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -186,6 +186,130 @@ border-radius:20px;
 box-shadow:0 15px 40px rgba(0,0,0,.6);
 }
 
+/* INSTALLATION STEPS */
+
+.installation{
+padding:100px 8%;
+text-align:center;
+background:linear-gradient(#0a0a0a,#1a1a1a);
+}
+
+.installation .section-title{
+margin-bottom:60px;
+}
+
+.steps-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+margin-bottom:50px;
+}
+
+.step-card{
+position:relative;
+padding:40px 25px;
+border-radius:16px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,44,85,.2);
+transition:.3s;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.step-card:hover{
+transform:translateY(-6px);
+background:rgba(255,255,255,.08);
+border-color:rgba(255,44,85,.4);
+}
+
+.step-number{
+position:absolute;
+top:-20px;
+left:50%;
+transform:translateX(-50%);
+width:50px;
+height:50px;
+border-radius:50%;
+background:#ff2c55;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:700;
+}
+
+.step-image{
+width:100%;
+height:180px;
+border-radius:12px;
+margin:30px 0 20px 0;
+object-fit:cover;
+box-shadow:0 10px 30px rgba(255,44,85,.2);
+}
+
+.step-card h3{
+font-size:18px;
+margin-bottom:12px;
+color:white;
+}
+
+.step-card p{
+font-size:14px;
+color:#bbb;
+line-height:1.6;
+}
+
+/* INSTALLATION VISUAL GUIDE */
+
+.visual-guide{
+margin-top:60px;
+padding:40px;
+border-radius:16px;
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,44,85,.15);
+}
+
+.visual-guide h3{
+margin-bottom:30px;
+font-size:24px;
+}
+
+.guide-images{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.guide-image-wrapper{
+position:relative;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.guide-images img{
+width:100%;
+height:300px;
+object-fit:cover;
+display:block;
+}
+
+.guide-images .label{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,.8);
+padding:12px;
+text-align:center;
+font-size:13px;
+font-weight:500;
+color:#ff2c55;
+}
+
 /* CTA */
 
 .cta{
@@ -246,6 +370,47 @@ transform:translateY(0);
 
 }
 
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+}
+
+nav{
+padding:15px 5%;
+}
+
+nav a{
+margin-left:15px;
+font-size:13px;
+}
+
+.steps-grid{
+grid-template-columns:1fr;
+gap:30px;
+}
+
+.guide-images{
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+}
+
+.guide-images img{
+height:200px;
+}
+
+}
+
 </style>
 
 </head>
@@ -259,6 +424,7 @@ transform:translateY(0);
 <div>
 
 <a href="#features">Features</a>
+<a href="#how-to-install">How to Install</a>
 <a href="#download">Download</a>
 
 </div>
@@ -274,7 +440,7 @@ transform:translateY(0);
 
 <p>
 
-Lustroom is a fast and modern Android streaming app designed for
+LustRoom is a fast and modern Android streaming app designed for
 mobile entertainment. Discover trending videos, explore popular
 content and enjoy smooth HD playback with a clean and powerful
 video player.
@@ -286,7 +452,7 @@ Download Android App
 </a>
 
 <div class="download-count">
-<span id="counter">0</span> downloads
+<!-- <span id="counter">0</span> downloads -->
 </div>
 
 </div>
@@ -296,7 +462,7 @@ Download Android App
 
 <section class="features" id="features">
 
-<h2 class="section-title">Why Lustroom</h2>
+<h2 class="section-title">Why LustRoom</h2>
 
 <div class="grid">
 
@@ -337,12 +503,95 @@ recommended videos.
 </section>
 
 
+<!-- NEW INSTALLATION SECTION -->
 
+<section class="installation" id="how-to-install">
+
+<h2 class="section-title">How to Install LustRoom</h2>
+
+<div class="steps-grid">
+
+<div class="step-card">
+<div class="step-number">1</div>
+<img src="https://images.unsplash.com/photo-1512941691920-25bda36dc643?w=400&h=300&fit=crop" alt="Step 1" class="step-image">
+<h3>Click Download Button</h3>
+<p>
+Tap the "Download Android App" button above to start downloading the APK file to your device.
+</p>
+</div>
+
+<div class="step-card">
+<div class="step-number">2</div>
+<img src="https://images.unsplash.com/photo-1526374965328-7f5ae4e8a841?w=400&h=300&fit=crop" alt="Step 2" class="step-image">
+<h3>Open Downloaded File</h3>
+<p>
+Once the download is complete, open the notification panel and tap on the downloaded APK file.
+</p>
+</div>
+
+<div class="step-card">
+<div class="step-number">3</div>
+<img src="https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=400&h=300&fit=crop" alt="Step 3" class="step-image">
+<h3>Open Security Settings</h3>
+<p>
+Go to your device Settings and navigate to Security settings to allow unknown sources.
+</p>
+</div>
+
+<div class="step-card">
+<div class="step-number">4</div>
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Step 4" class="step-image">
+<h3>Enable Unknown Sources</h3>
+<p>
+Enable "Allow installation from unknown sources" or give Chrome permission to install APK files.
+</p>
+</div>
+
+<div class="step-card">
+<div class="step-number">5</div>
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop" alt="Step 5" class="step-image">
+<h3>Complete Installation</h3>
+<p>
+Return to the APK file and tap Install. Wait for the installation to complete and enjoy LustRoom!
+</p>
+</div>
+
+</div>
+
+<!-- VISUAL GUIDE -->
+
+<div class="visual-guide">
+<h3>Installation Process Overview</h3>
+<div class="guide-images">
+<div class="guide-image-wrapper">
+<img src="https://images.unsplash.com/photo-1512941691920-25bda36dc643?w=400&h=500&fit=crop" alt="Download">
+<div class="label">Step 1: Download</div>
+</div>
+<div class="guide-image-wrapper">
+<img src="https://images.unsplash.com/photo-1526374965328-7f5ae4e8a841?w=400&h=500&fit=crop" alt="Open File">
+<div class="label">Step 2: Open File</div>
+</div>
+<div class="guide-image-wrapper">
+<img src="https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=400&h=500&fit=crop" alt="Settings">
+<div class="label">Step 3: Settings</div>
+</div>
+<div class="guide-image-wrapper">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=500&fit=crop" alt="Allow">
+<div class="label">Step 4: Allow</div>
+</div>
+<div class="guide-image-wrapper">
+<img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=500&fit=crop" alt="Install">
+<div class="label">Step 5: Install</div>
+</div>
+</div>
+</div>
+
+</section>
 
 
 <section class="cta" id="download">
 
-<h2>Download Lustroom</h2>
+<h2>Download LustRoom</h2>
 
 <p>
 
@@ -359,7 +608,7 @@ Download APK
 
 <footer>
 
-© 2026 Lustroom • Android Streaming Application
+© 2026 LustRoom • Android Streaming Application
 
 </footer>
 
@@ -373,13 +622,13 @@ document.getElementById("counter").innerText = downloads;
 
 function downloadApp(){
 
-downloads++;
+// downloads++;
 
-localStorage.setItem("downloads",downloads);
+// localStorage.setItem("downloads",downloads);
 
-document.getElementById("counter").innerText = downloads;
+// document.getElementById("counter").innerText = downloads;
 
-window.location.href="https://github.com/Lalit555/lustroom/releases/download/v1.0.1%2B2/app.apk";
+window.location.href="https://github.com/Lalit555/lustRoom/releases/download/v1.0.1%2B2/app.apk";
 
 }
 
